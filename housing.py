@@ -204,9 +204,11 @@ for k in range(K):
 
 print_output(settings, risk_average_training, risk_average_test)	# stampo impostazioni e risultati a video
 
-with open("Data/Output/predictor.txt", "w") as w_out:							#	salvo il predictor finale
-	for w_elem in final_w:
-		w_out.write(str(w_elem)+'\n')
+final_w = pd.DataFrame(final_w.reshape((1, -1))) 
+if os.path.exists('Data/Output/predictor.csv'):
+	final_w.to_csv('Data/Output/predictor.csv', mode='a', header=False, index=False)
+else:
+	final_w.to_csv('Data/Output/predictor.csv', mode='w', header=True, index=False)
 
 test_df = (df_copy.iloc[subset*(K-1):, :]).reset_index(drop=True)
 test_df.insert(len(test_df.columns), "correct_labels", test_labels)

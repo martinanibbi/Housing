@@ -8,8 +8,8 @@ In this folder 4 python scripts are provided:
 
 The first one is the one that really matters, as it holds the code that applies the Ridge Regression algorithm to the given dataset in order to predict the housing median values in the Northern California area.
 The script reads data and the initial settings from the files named "cal-housing.py" and "settings_housing.csv", both located in the repository "Data/Input", and writes the final results in the repository "Data/Output".
-In particular, the predicted values are stored with the correct ones in files "test.csv" and "training.csv", the final predictor is written in file "predictor.text" and, whenever PCA is performed, the eigenvalues of the covariance matrix and their percentage on the total sum are saved in "PCA_eigenvalues.py".
-Moreover, in file "housing_results.csv" the initial settings are appended with the final training and test errors every time the algorithm is performed in order to study the trend of the final losses by changing the settings.
+In particular, the predicted values are stored with the correct ones in files "test.csv" and "training.csv" and, whenever PCA is performed, the eigenvalues of the covariance matrix and their percentage on the total sum are saved in "PCA_eigenvalues.py".
+Moreover, in file "housing_results.csv" the initial settings are appended with the final training and test errors every time the algorithm is performed and the same goes with file "predictor.csv" with the predictor's elements.
 
 The initial settings are:
 1) Random seed (the results shown in the report have been obtained by seed=42)

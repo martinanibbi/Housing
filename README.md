@@ -41,5 +41,5 @@ The other 3 python scripts ran the original script multiple times by changing th
 2) seed_test.py runs multiple simulations by changing the seed
 3) alpha_test.py runs multiple simulations by changing the hyperparameter alpha
 
-In all of these cases, the file "housing_results.csv" is deleted before starting the multiple simulations.
+In all of these cases, the files "housing_results.csv" and "predictor.csv" are deleted before starting the multiple simulations.
 

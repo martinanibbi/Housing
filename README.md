@@ -46,3 +46,4 @@ In all of these cases, the files "housing_results.csv" and "predictor.csv" are d
 
 Finally, settings.setup.py only changes file "settings_housing.csv" with the best solution previously stated.
 
+There is also a jupyter notebook file in which the plots of the final results can be seen.
